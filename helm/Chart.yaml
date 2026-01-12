@@ -1,0 +1,8 @@
+apiVersion: v2
+name: web-app
+description: A simple Web Application
+type: application
+
+
+version: 0.1.0
+appVersion: "<Generated>"
