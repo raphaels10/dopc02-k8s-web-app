@@ -28,4 +28,4 @@ phases:
       - echo "Successfully updated helm chart."
 
 artifacts:
-  files: imagedefinitions.json
+  files: './helm/**/*'
