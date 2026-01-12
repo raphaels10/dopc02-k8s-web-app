@@ -24,7 +24,7 @@ phases:
       - echo Updating helm chart app version...
       - sed -i "s/<Generated>/${COMMIT_HASH}/g" ./helm/Chart.yaml
       - echo Updating image for helm chart...
-      - sed -i "s/<Generated>/${IMAGE_URI}/g" ./helm/values.yaml
+      - sed -i "s|<Generated>|${IMAGE_URI}|g" ./helm/values.yaml
       - echo "Successfully updated helm chart."
 
 artifacts:
